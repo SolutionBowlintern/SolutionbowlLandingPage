@@ -1,0 +1,221 @@
+{
+  "project": "Solution Bowl - Mobile App Development Campaign",
+  "generatedAt": "2026-04-22T00:00:00Z",
+  "meta": {
+    "purpose": "Claude Design import - landing page layout + copy",
+    "author": "GitHub Copilot",
+    "notes": "Mobile-first, clean SaaS style. Sections map to Claude Design blocks/components."
+  },
+  "designSystem": {
+    "colors": {
+      "primary": "#0A6EFF",
+      "accent": "#00C2A8",
+      "bg": "#F7FAFC",
+      "text": "#0F1724",
+      "muted": "#667085"
+    },
+    "typography": {
+      "font": "Inter",
+      "headlineMobile": "36/44",
+      "headlineDesktop": "48/60",
+      "body": "16/24"
+    },
+    "spacing": {
+      "base": 16,
+      "rhythm": 24
+    },
+    "components": ["Header","HeroCard","LogoStrip","FeatureCard","HighlightCard","Stepper","Grid2x3","CaseCard","CompareTable","TestimonialSlider","Accordion","Footer"]
+  },
+  "assets": {
+    "mockups": ["phone-1.png","phone-2.png","phone-3.png"],
+    "icons": "24px-outline-set",
+    "figmaPlaceholder": "https://placeholder.figma/project/solutionbowl"
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "layout": "Two-column desktop (left copy, right mockups). Mobile stacked: copy then visuals.",
+      "components": ["HeroCard","PhoneMockups"],
+      "copy": {
+        "headline": "Launch a high-quality mobile app — UI/UX design included.",
+        "subheadline": "End-to-end mobile development for founders and product teams. Design is bundled to cut rework, speed delivery, and improve retention.",
+        "primaryCta": {"label":"Book a Call — Free 30‑min consult","action":"book_call"},
+        "secondaryCta": {"label":"See Work","action":"scroll_to:case_studies"},
+        "microcopy": "Limited monthly slots • Design value ~₹1,50,000+"
+      },
+      "visuals": {
+        "mockups": "3 layered devices showing onboarding, home, conversion screens",
+        "animationHints": "subtle prototype hotspot animation; parallax tilt on desktop"
+      }
+    },
+    {
+      "id": "trust_bar",
+      "name": "Trust Bar",
+      "layout": "Horizontal logo row with metric chips. Mobile: stacked metrics then logos.",
+      "copy": "Trusted by early-stage startups and small businesses — 40+ apps shipped • 30+ product teams served • Avg delivery 8–10 weeks",
+      "visuals": {"logos":"grayscale logos with equal padding","metrics":"chips with small icons"}
+    },
+    {
+      "id": "problems",
+      "name": "Why most mobile projects fail",
+      "layout": "3-4 cards (horizontal scroll on mobile, grid on desktop)",
+      "cards": [
+        {"title":"Design billed separately","body":"Extra vendor, extra cost, slower iterations."},
+        {"title":"Poor app experience","body":"Users drop off when flows are confusing."},
+        {"title":"Slow dev cycles","body":"Rework from late design adds weeks and cost."},
+        {"title":"Fragmented teams","body":"Multiple vendors create unclear ownership and delays."}
+      ],
+      "visuals": {"cardStyle":"soft card, icon on top, slight hover lift","accentUse":"accent color for keywords"}
+    },
+    {
+      "id": "solution",
+      "name": "Our approach",
+      "layout": "Split feature blocks (2 columns desktop / stacked mobile)",
+      "features": [
+        {"title":"End-to-end mobile development","body":"From discovery to App Store release, one team owns results."},
+        {"title":"UI/UX integrated from day one","body":"Fewer handoffs, less rework, predictable timelines."},
+        {"title":"Fast sprints","body":"Focused 2-week sprints with weekly demos."},
+        {"title":"Cost efficiency","body":"Bundled design reduces overall project cost and unknowns."}
+      ],
+      "visuals": {"icons":"one per block","connector":"thin timeline linking blocks"}
+    },
+    {
+      "id": "offer",
+      "name": "Offer - Get Free UI/UX Design with Your App",
+      "layout": "Prominent highlight/pricing-style card; two-column inside (details + value anchor)",
+      "copy": {
+        "title":"Get Free UI/UX Design with Your App",
+        "lead":"Professional design included as part of every app engagement — not a flimsy add-on.",
+        "included": [
+          "Discovery workshop (1–2 hours)",
+          "User flows & information architecture",
+          ""High‑fidelity screens (up to 10 core screens)"",
+          "Clickable Figma prototype",
+          "Design system & tokens for dev handoff",
+          "Accessibility & performance checklist"
+        ],
+        "valueAnchor":"Estimated design value: ₹1,50,000+",
+        "whyFree":"We bundle design because it reduces rework, shortens timelines, and speeds delivery — so we don’t bill it separately.",
+        "cta":{"label":"Claim Free UI/UX — Book a Call","action":"book_call"},
+        "microcopy":"Available for new mobile development projects. No separate design invoice."
+      },
+      "visuals": {"valueBadge":"₹1,50,000+","checklistIcons":true,"ctaColor":"accent"}
+    },
+    {
+      "id": "process",
+      "name": "Our process",
+      "layout": "Horizontal 5-step timeline (desktop) / vertical steps (mobile)",
+      "steps": [
+        {"step":1,"title":"Discovery","body":"Goals, users, scope","duration":"1–2 weeks"},
+        {"step":2,"title":"UI/UX Design","body":"Flows, screens, prototype","duration":"2–4 weeks"},
+        {"step":3,"title":"Development","body":"Sprints, weekly demos","duration":"6–12 weeks"},
+        {"step":4,"title":"Testing","body":"QA, device testing","duration":"1–2 weeks"},
+        {"step":5,"title":"Launch","body":"App Store releases + handover","duration":"--"}
+      ],
+      "visuals": {"stepperStyle":"numbered circles connected by a thin line","hover":"reveal one-line detail"}
+    },
+    {
+      "id": "benefits",
+      "name": "Why founders pick Solution Bowl",
+      "layout": "2x3 grid (desktop) / stacked (mobile)",
+      "items": [
+        {"title":"Faster launch","body":"Reduce time-to-market with integrated design."},
+        {"title":"Better retention","body":"Thoughtful UX increases user engagement."},
+        {"title":"Scalable tech","body":"Cross-platform architecture that grows."},
+        {"title":"Cross-platform apps","body":"Native-like builds for iOS & Android."},
+        {"title":"Clean UI","body":"Production-ready designs that reflect your brand."},
+        {"title":"Business-focused builds","body":"Features prioritized for revenue & retention."}
+      ],
+      "visuals": {"icons":"minimal","alternatingBackgrounds":true}
+    },
+    {
+      "id": "case_studies",
+      "name": "Selected work (case studies)",
+      "layout": "Carousel on mobile / 3-column grid on desktop",
+      "cases": [
+        {"name":"NimblePay","problem":"Low activation during signup","solution":"Redesigned onboarding + native app","result":"Activation +42% in 4 weeks; shipped in 9 weeks"},
+        {"name":"MarketCart","problem":"High cart abandonment","solution":"Streamlined checkout + PWA fallback","result":"Checkout conversions +28%; build time 8 weeks"},
+        {"name":"FitLoop","problem":"Weak 30-day retention","solution":"Gamified flows + push strategy","result":"30-day retention +30%; engagement 2x"}
+      ],
+      "visuals": {"beforeAfter":"mini screenshots","metrics":"green badges"}
+    },
+    {
+      "id": "comparison",
+      "name": "How we compare",
+      "layout": "Two-column table (Solution Bowl vs Traditional agencies). Mobile: stacked comparison cards.",
+      "rows": [
+        {"label":"UI/UX included","solution":"Yes (bundled)","traditional":"Billed separately"},
+        {"label":"Timeline predictability","solution":"Fixed sprints & clear milestones","traditional":"Longer handoffs"},
+        {"label":"Single vendor","solution":"One team owns delivery","traditional":"Multiple vendors, more coordination"},
+        {"label":"Cost","solution":"Lower total project cost (design bundled)","traditional":"Higher TCO due to separate design vendor"},
+        {"label":"Flexibility","solution":"Iterative sprints and quick revisions","traditional":"Waterfall & slower changes"}
+      ],
+      "visuals": {"highlightColumn":"solution","icons":"check/cross"}
+    },
+    {
+      "id": "testimonials",
+      "name": "Testimonials",
+      "layout": "Slider or 3-card grid; portrait, role, brief outcome-driven quote, metric badge",
+      "items": [
+        {"quote":"We launched in two months and saved significant design costs — users loved the onboarding.","name":"Priya R.","role":"Founder, Fintech"},
+        {"quote":"Integrated design + engineering cut rework and helped us hit product-market fit faster.","name":"Marcos T.","role":"Product Lead"},
+        {"quote":"Conversion improved immediately after redesign — the prototype made decisions simple.","name":"Anika S.","role":"CEO, Retail"}
+      ],
+      "visuals": {"portraitStyle":"circle","metricTags":true}
+    },
+    {
+      "id": "faq",
+      "name": "FAQ",
+      "layout": "Accordion toggles (mobile-first)",
+      "items": [
+        {"q":"Is UI/UX really free?","a":"Yes. For all paid mobile development projects we bundle a full design package to reduce rework and speed delivery."},
+        {"q":"How long does a typical project take?","a":"Typical timelines are 8–16 weeks depending on scope: discovery 1–2w, design 2–4w, development 6–12w."},
+        {"q":"Which platforms do you support?","a":"iOS, Android (native and cross-platform), Flutter/React Native, and PWAs."},
+        {"q":"What’s the pricing model?","a":"Fixed-price for defined scopes and T&M for ongoing work. Book a consult for a tailored estimate."}
+      ],
+      "visuals": {"accordionStyle":"clean, micro-animations"}
+    },
+    {
+      "id": "final_cta",
+      "name": "Final CTA",
+      "layout": "Centered full-width band with bold headline and primary CTA",
+      "copy": {
+        "headline":"Ready to build? Get free UI/UX with your app.",
+        "primaryCta":{"label":"Book a Call — Reserve a slot","action":"book_call"},
+        "secondaryCta":{"label":"Get a Quote","action":"get_quote"},
+        "microcopy":"Limited monthly intake — we prioritize early commitment."
+      },
+      "visuals": {"background":"deep-blue band","ctaColor":"accent","calendarIndicator":true}
+    },
+    {
+      "id": "footer",
+      "name": "Footer",
+      "layout": "Four columns desktop / stacked mobile",
+      "columns": {
+        "contact":"hello@solutionbowl.ai • Book a call",
+        "services":"Mobile Development • UI/UX Design • Product Strategy",
+        "resources":"Case Studies • Blog • Docs",
+        "legal":"Privacy • Terms"
+      },
+      "visuals": {"socialIcons":true,"lowContrastLinks":true}
+    }
+  ],
+  "bonus": {
+    "headlines": [
+      "Free UI/UX with every mobile app — design that ships.",
+      "Build faster and cheaper: app development + included design.",
+      "Launch a polished mobile app — design included, no surprises."
+    ],
+    "ctaVariants": [
+      "Book a Call — Free 30‑min consult",
+      "Get a Quote — Start your estimate"
+    ],
+    "abTests": [
+      "Hero CTA: 'Book a Call' vs 'Get a Quote'",
+      "Offer copy: 'Estimated design value: ₹1,50,000+' vs 'Free UI/UX included'",
+      "Case study lead: metric-first vs story-first"
+    ]
+  },
+  "importNotes": "Each section maps to a Claude Design block. Use provided copy fields to populate Text nodes, and 'visuals' to guide image/components. Tokens in designSystem should be applied to components."
+}
